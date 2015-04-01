@@ -32,7 +32,15 @@ def intro():
        if (choice == 1):
            messagebox.showinfo
                                         
-                                        
+
+
+##############Khai################
+
+
+##############Main################
+intro()
+root.destroy()
+
        
                                      
                                      
