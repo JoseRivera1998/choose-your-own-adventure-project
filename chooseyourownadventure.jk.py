@@ -1,46 +1,39 @@
-# Import and value sets
-import random
-import math
+# choose.py
+# by Jose and Khai
+# Description: starter code for your
+# own adventure project
+
+#import statements
 from tkinter import *
-import tkinter.simpledialog as simpledialog
-import tkinter.messagebox as messagebox
+import tkinter.simpledialog
+import tkinter.messagebox
 
 root = Tk()
-w = Label(root, text="ChooseYour own Adventure")
+w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
-##############Jose and Khai###############
 def intro():
-    choice = simpledialog.askinteger("Choose the path",
-                                     " Jose has two roads to choose. Jose is walking down a road\n" +
-                                     "when Jose came across two paths, one leads to HELL, and the other \nleads to HEAVEN.\n\n" +
-                                    "Choose what to do:\n 1: Go to HEAVEN.\n 2: Go to HELL.")
-    if (choice == 1):
-        HEAVEN()
-    elif (choice == 2):
-        HELL()
+    """Introductory Function -> starts the story going """
+    messagebox.showinfo("Title", "Your name is Jose. ""One day you are going on a jog, but then you got lost and you need to find a way home. You forgot your phone and you're too dumb to call for help. So you just walk around. ")
+    messagebox.showinfo("Start", "You're walking down the road when you stumble upon 2 paths, one leads to heaven and the other leads to hell.")                    
+    choice = simpledialog.askinteger("Choose which path",
+                                     "You have 2 choices, choose 1 if you want to go to heaven to fight god. Choose 2 if you want to go to hell to fight the devil. Enter in 1 or 2.")
+    if choice == 1:
+         choice1()
+    elif choice == 2:
+         choice2()
     else:
-        intro()
-##############JOSE################
-                                     
-   def HEAVEN():
-    choice = simpledialog.askinteger("What to do?",  "You go to HEAVEN to meet god.
-                                        You get to meet god.\n" +
-                                        "Since you decided to go to HEAVEN.
-                                        \nThere you meet god. " +
-                                        "God asks if you need anything.\n\You decide to:n 1 : To Fight God.\n 2: Do not fight God.")
-       if (choice == 1):
-           messagebox.showinfo
-                                        
+         intro()
 
 
-##############Khai################
+###################### JOSE FUNCTION ########################
 
 
-##############Main################
+###################### KHAI FUNCTION ########################
+
+
+
+###################### MAIN #################################
 intro()
-root.destroy()
 
-       
-                                     
-                                     
+root.destroy()
