@@ -29,15 +29,14 @@ def intro():
 ###################### JOSE FUNCTION ########################
 def choice1():
     choice =  simpledialog.askinteger("Choose carefully",
-                                      "You get to decide if you wnat to fight God or not"
- you must choose 1 or 2 again.")
-     if (choice == 1):
+                                      "You get to decide if you wnat to fight God or not. You must choose 1 or 2 again.")
+    if (choice == 1):
         messagebox.showinfo("You win!",
                             "You beat God and became the leader of all Heaven.  THE END")
-     elif (choice == 2):
-          messagebox.showinfo("You decided not to fight God!!",
+    elif (choice == 2):
+        messagebox.showinfo("You decided not to fight God!!",
                               "Now that you have decided not to fight with God you became BFF's and God made you into an Angel. THE END")
-     else:
+    else:
       choice1()                                
                                 
 ###################### KHAI FUNCTION ########################
