@@ -30,7 +30,17 @@ def intro():
 
 
 ###################### KHAI FUNCTION ########################
-
+def choice2():
+    choice = simpledialog.askinteger("Choose carefully",
+                                     "You get to decide if you want to fight the Devil. Now you must choose 1 or 2 again, 1 is to fight the Devil and 2 is to not fight the Devil. Enter in 1 or 2.")
+    if (choice == 1):
+        messagebox.showinfo("You win!",
+                            "You become leader of all Hell!    THE END")
+    elif (choice == 2):
+        messagebox.showinfo("You have decided not to fight Devil!",
+                            "You have chosen not to fight Devil, you become his BFF for eternity and plan to someday team up with him to fight God.   THE END")
+    else:
+        choice2()
 
 
 ###################### MAIN #################################
