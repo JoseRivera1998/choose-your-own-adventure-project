@@ -43,7 +43,7 @@ def choice1():
 ###################### KHAI FUNCTION ########################
 def choice2():
     choice = simpledialog.askinteger("Choose carefully",
-                                     "You get to decide if you want to fight the Devil. Now you must choose 1 or 2 again, 1 is to fight the Devil and 2 is to not fight the Devil. Enter in 1 or 2.")
+                                     "You get to decide if you want to fight the Devil. Now you must choose 1 or 2 again. Enter in 1 or 2.")
     if (choice == 1):
         messagebox.showinfo("You win!",
                             "You become leader of all Hell!    THE END")
