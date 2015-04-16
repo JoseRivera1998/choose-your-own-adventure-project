@@ -83,6 +83,34 @@ def choice4():
     else:
         choice4()
 
+##################### KHAI FUNCTION #########################
+
+
+##################### JOSE FUNCTION #########################
+def choice6():
+    choice = simpledialog.askineger("Choose carefully",
+                                    "You get to decide if you want to go to the desert that leads you to your house or you decide to stay where you are and die.You must choose 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("You decide to go to the desert!",
+                            "You have chosen to take the path that leads to the desert, once you got through the desrt you were able to get to your house safely!")
+    elif(choice == 2):
+        messagebox.showinfo("You decide not to go through the desert because you believed you would get no where so you ended up staying and you died")
+    else:
+        choice6()
+##################### KHAI FUNCTION #########################
+        
+##################### JOSE FUNCTION #########################
+def choice8():
+    choice = simpledialog.askinteger("Choose carefully",
+                                     "one of the eight paths leasd to a world called GTA V. You can either choose to go become friends with Franklin or not to be freinds with Franklin. You must choose 1 or 2 again.")
+    if 9choice == 1):
+        messagebox.showinfo("You decided to become freinds with Franklin!",
+                            "once you became friends with Franklin you both decided to go kill everybody and commit crimes in Los Santos and you live happily ever after.")
+    elif(choice == 2):
+        messagebox.showinfo("You decided to not becamoe friends with Franklin",
+                            "once you decided not to become friends with Frankilin you kill him and become the lead protagonist in GTA V.")
+    else:
+        choice8()
         
 ###################### MAIN #################################
 intro()
