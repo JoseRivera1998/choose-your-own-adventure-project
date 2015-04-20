@@ -9,6 +9,7 @@ import tkinter.simpledialog
 import tkinter.messagebox
 
 root = Tk()
+
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
 
@@ -17,9 +18,9 @@ def intro():
     messagebox.showinfo("Title", "Your name is Jose. ""One day you are going on a jog, you jog so far into the deep forest then you got lost and you need to find a way home. You forgot your phone, it is getting late. So you just walk around hoping to find shelter to wait it out until morning.")
     messagebox.showinfo("Start", "You're walking down the road when you stumble upon 8 magical portals one leads to heaven, one to hell, one stay on earth, one to your own fantasy world, one to the sea, one to the desert, one to the world of League of Legends, and last but not least one to GTA V.")                    
     choice = simpledialog.askinteger("Choose which path",
-                                     "You have 8 choices, choose 1 if you want to go to heaven to fight god. Choose 2 if you want to go to hell to fight the devil. Choose 3 if you want to stay on Earth."
-                                     "Choose 4 if you want to go to a fantasy world. Choose 5 if you want to go to the sea. Choose 6 if you want to go to the desert. Choose 7 if you want to go to Summoner's Rift"
-                                     " League of Legends World. Choose 8 if you want to go to GTA V world. Enter in 1, 2, 3, 4, 5, 6, 7, or 8.")
+                                     "You have 8 choices, choose 1 if you want to go to heaven to fight god. Choose 2 if you want to go to hell to fight the devil. Choose 3 if you want to stay on Earth.\n"
+                                     "Choose 4 if you want to go to a fantasy world. Choose 5 if you want to go to the sea. Choose 6 if you want to go to the desert. Choose 7 if you want to go to Summoner's Rift\n"
+                                     " League of Legends World. Choose 8 if you want to go to GTA V world. Enter in 1, 2, 3, 4, 5, 6, 7, or 8.\n\n")
     if choice == 1:
          choice1()
     elif choice == 2:
@@ -120,20 +121,20 @@ def choice6():
 ##################### KHAI FUNCTION #########################
 def choice7():
     choice = simpledialog.askinteger("Choose wisely",
-                                     "You have chosen to go to the League of Legends world! Do you want to be a summoner? A summoner is someone who battle other summoners for the pride and glory of winning. Enter in 1 or 2 again.")
+                                     "You have chosen to go to the League of Legends world! Do you want to be a summoner? A summoner is someone who battle other summoners for the pride and glory of winning.\n You can choose to go pro or not. Enter in 1 or 2 again.")
     if (choice == 1):
         messagebox.showinfo("You're the world champion!",
-                            "You now go into the battlefield of league of legends and begin your training to become the best in the world to win 1 million dollars!")
+                            " You have chosen to go pro. You now go into the battlefield of league of legends and begin your training to become the best in the world to win 1 million dollars!")
     elif (choice == 2):
         messagebox.showinfo("Loser!",
-                            "You spend the rest of your life in this world and play this game until you die of boredom.")
+                            "You have chosen not to go pro and now you spend the rest of your life in this world and play this game until you die of boredom.")
     else:
         choice7()     
 ##################### JOSE FUNCTION #########################
 def choice8():
     choice = simpledialog.askinteger("Choose carefully",
-                                     "one of the eight paths leasd to a world called GTA V. You can either choose to go become friends with Franklin or not to be freinds with Franklin. You must choose 1 or 2 again.")
-    if 9choice == 1):
+                                    "one of the eight paths leasd to a world called GTA V. You can either choose to go become friends with Franklin or not to be freinds with Franklin. You must choose 1 or 2 again.")
+    if (choice == 1):
         messagebox.showinfo("You decided to become freinds with Franklin!",
                             "once you became friends with Franklin you both decided to go kill everybody and commit crimes in Los Santos and you live happily ever after.")
     elif(choice == 2):
