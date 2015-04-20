@@ -14,10 +14,12 @@ w.pack()
 
 def intro():
     """Introductory Function -> starts the story going """
-    messagebox.showinfo("Title", "Your name is Jose. ""One day you are going on a jog, but then you got lost and you need to find a way home. You forgot your phone and you're too dumb to call for help. So you just walk around. ")
-    messagebox.showinfo("Start", "You're walking down the road when you stumble upon 4 paths, one leads to heaven, one to hell, one stay on earth, the other one is a fantasy world.")                    
+    messagebox.showinfo("Title", "Your name is Jose. ""One day you are going on a jog, you jog so far into the deep forest then you got lost and you need to find a way home. You forgot your phone, it is getting late. So you just walk around hoping to find shelter to wait it out until morning.")
+    messagebox.showinfo("Start", "You're walking down the road when you stumble upon 8 magical portals one leads to heaven, one to hell, one stay on earth, one to your own fantasy world, one to the sea, one to the desert, one to the world of League of Legends, and last but not least one to GTA V.")                    
     choice = simpledialog.askinteger("Choose which path",
-                                     "You have 4 choices, choose 1 if you want to go to heaven to fight god. Choose 2 if you want to go to hell to fight the devil. Choose 3 if you want to stay on Earth. Choose 4 if you want to go to a fantasy world. Enter in 1, 2, 3 or 4.")
+                                     "You have 8 choices, choose 1 if you want to go to heaven to fight god. Choose 2 if you want to go to hell to fight the devil. Choose 3 if you want to stay on Earth."
+                                     "Choose 4 if you want to go to a fantasy world. Choose 5 if you want to go to the sea. Choose 6 if you want to go to the desert. Choose 7 if you want to go to Summoner's Rift"
+                                     " League of Legends World. Choose 8 if you want to go to GTA V world. Enter in 1, 2, 3, 4, 5, 6, 7, or 8.")
     if choice == 1:
          choice1()
     elif choice == 2:
@@ -26,6 +28,14 @@ def intro():
          choice3()
     elif choice == 4:
          choice4()
+    elif choice == 5:
+         choice5()
+    elif choice == 6:
+         choice6()
+    elif choice == 7:
+         choice7()
+    elif choice == 8:
+         choice8()
     else:
          intro()
 
@@ -84,7 +94,17 @@ def choice4():
         choice4()
 
 ##################### KHAI FUNCTION #########################
-
+def choice5():
+    choice = simpledialog.askinteger("Choose carefully",
+                                     "You're now transported to an island where you are stranded with some coconut trees and fishing tools. You have 2 choices, either you become a pirate and get rich or you can choose not to become a pirate and live the rest of your life on that island fishing and drinking coconuts. You must choose 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("You're King of the Sea!",
+                            "You hace chosen to become a pirate, you venture out onto the sea and rob everyone you could find and become the richest pirate around. Live a life full of adventures!")
+    elif (choice == 2):
+        messagebox.showinfo("Darn. Sucks to be you",
+                            "You've decided not to become a pirate and live the rest of your life fishing and drinking coconuts on a lonely island until you die. R.I.P.")
+    else:
+        choice5()
 
 ##################### JOSE FUNCTION #########################
 def choice6():
@@ -98,7 +118,17 @@ def choice6():
     else:
         choice6()
 ##################### KHAI FUNCTION #########################
-        
+def choice7():
+    choice = simpledialog.askinteger("Choose wisely",
+                                     "You have chosen to go to the League of Legends world! Do you want to be a summoner? A summoner is someone who battle other summoners for the pride and glory of winning. Enter in 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("You're the world champion!",
+                            "You now go into the battlefield of league of legends and begin your training to become the best in the world to win 1 million dollars!")
+    elif (choice == 2):
+        messagebox.showinfo("Loser!",
+                            "You spend the rest of your life in this world and play this game until you die of boredom.")
+    else:
+        choice7()     
 ##################### JOSE FUNCTION #########################
 def choice8():
     choice = simpledialog.askinteger("Choose carefully",
